@@ -1,41 +1,55 @@
 #include "my_comport.h"
-#include <qextserialport.h>
-
-QextSerialPort *port;
 
 //------------------------------------------------------------------------------
-void comport_init()
+MyComPort::MyComPort(QObject* parent)
+: QObject(parent)
 {
-	//port = new QextSerialPort("/dev/ttyUSB0");
-	port = new QextSerialPort("/dev/ttyp0");
+	PortSettings portsettings;
 
-	port->setBaudRate(BAUD115200);
-	port->setFlowControl(FLOW_OFF);
-	port->setParity(PAR_NONE);
-	port->setDataBits(DATA_8);
-	port->setStopBits(STOP_1);
+	portsettings.BaudRate = BAUD115200;
+	portsettings.DataBits = DATA_8;
+	portsettings.Parity = PAR_NONE;
+	portsettings.StopBits = STOP_1;
+	portsettings.FlowControl = FLOW_OFF;
+	portsettings.Timeout_Millisec = 500;
+	portsettings.Timeout_Sec = 0;
+
+	mainComThread = new QMainComThread("/dev/ttyp0",&portsettings);
+	mainComThread->start();
+
+	port =  NULL;
+
+	while (!port)
+	{
+		port = mainComThread->getPort();
+		qApp->processEvents();
+	}
 
 	//connect(port,SIGNAL(newDataInPortSignal(QTime,const unsigned char *, const int)),this, SLOT(receiveMsg(QTime,const unsigned char *, const int)));
 }
 //------------------------------------------------------------------------------
-void comport_open()
+void MyComPort::open()
 {
+	if (! port) return;
 	port->open(QIODevice::ReadWrite);
-	qDebug("is open: %d", port->isOpen());
+	qDebug("is open: %d",port->isOpen());
 }
 //------------------------------------------------------------------------------
-void comport_close()
+void MyComPort::close()
 {
+	if (! port) return;
 	port->close();
-	qDebug("is open: %d", port->isOpen());
+	qDebug("is open: %d",port->isOpen());
 }
 //------------------------------------------------------------------------------
-void comport_transmitMsg(QString &msg)
+void MyComPort::transmitMsg(QByteArray &data)
 {
-  int i = port->write(msg.toAscii(), msg.length());
-  qDebug("trasmitted : %d", i);
+	int count = port->write(data, data.length());
+	qDebug("trasmitted : %d", count);
 }
 //------------------------------------------------------------------------------
-
-
+void MyComPort::receiveMsg(const QTime timesl, const unsigned char *data, const int size)
+{
+}
+//------------------------------------------------------------------------------
 

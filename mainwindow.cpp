@@ -5,27 +5,28 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-	comport_init();
+	comport = new MyComPort();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+	delete comport;
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-	comport_open();
+	comport->open();
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-	comport_close();
+	comport->close();
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
+	/*
 	QString Message;
 	QString BytesRecieved_str;
 	int BytesRecieved = 0;
@@ -35,10 +36,14 @@ void MainWindow::on_pushButton_3_clicked()
 
 	ui->plainTextEdit->appendPlainText(Message);
 	ui->plainTextEdit_2->appendPlainText(BytesRecieved_str);
+	*/
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
-	QString TXMessage = "Hey, ComPort";
-	comport_transmitMsg(TXMessage);
+	QString str = "Hello";
+	QByteArray data;
+
+	data.append(str);
+	comport->transmitMsg(data);
 }

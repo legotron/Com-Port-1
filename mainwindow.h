@@ -19,6 +19,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+	MyComPort *comport;
 
 private slots:
 	void on_pushButton_4_clicked();

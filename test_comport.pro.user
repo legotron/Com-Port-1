@@ -62,7 +62,7 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wHDG58G2Nm,guid=48f492072d23007251c5bf2a4aeaffc1</value>
+    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-aZ6iaoKPzL,guid=3c6405057d8ee6caec233dd14af7c201</value>
     <value type="QString" >DESKTOP_SESSION=gnome</value>
     <value type="QString" >DESKTOP_STARTUP_ID=</value>
     <value type="QString" >DISPLAY=:0.0</value>
@@ -70,8 +70,8 @@
     <value type="QString" >GDM_KEYBOARD_LAYOUT=us</value>
     <value type="QString" >GDM_LANG=en_US.UTF-8</value>
     <value type="QString" >GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-2wfQgO/socket</value>
-    <value type="QString" >GPG_AGENT_INFO=/tmp/seahorse-UydlRd/S.gpg-agent:1869:1</value>
+    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-WB91xI/socket</value>
+    <value type="QString" >GPG_AGENT_INFO=/tmp/seahorse-5RrqWz/S.gpg-agent:1802:1</value>
     <value type="QString" >GTK_MODULES=canberra-gtk-module:gail:atk-bridge</value>
     <value type="QString" >GTK_RC_FILES=/etc/gtk/gtkrc:/home/oleg/.gtkrc-1.2-gnome2</value>
     <value type="QString" >HOME=/home/oleg</value>
@@ -82,16 +82,16 @@
     <value type="QString" >PATH=/home/oleg/qtsdk-2009.03/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
     <value type="QString" >PWD=/home/oleg</value>
     <value type="QString" >QTDIR=/home/oleg/qtsdk-2009.03/qt</value>
-    <value type="QString" >SESSION_MANAGER=local/oleg-laptop:@/tmp/.ICE-unix/1801,unix/oleg-laptop:/tmp/.ICE-unix/1801</value>
+    <value type="QString" >SESSION_MANAGER=local/oleg-laptop:@/tmp/.ICE-unix/1734,unix/oleg-laptop:/tmp/.ICE-unix/1734</value>
     <value type="QString" >SHELL=/bin/bash</value>
     <value type="QString" >SPEECHD_PORT=7560</value>
-    <value type="QString" >SSH_AGENT_PID=1842</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-2wfQgO/socket.ssh</value>
+    <value type="QString" >SSH_AGENT_PID=1775</value>
+    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-WB91xI/socket.ssh</value>
     <value type="QString" >USER=oleg</value>
     <value type="QString" >USERNAME=oleg</value>
-    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-oleg-1xFRdJ/database</value>
+    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-oleg-lXD4gF/database</value>
     <value type="QString" >XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString" >XDG_SESSION_COOKIE=11156b9b7f232169b83865704ac28d05-1256914880.174871-2021154120</value>
+    <value type="QString" >XDG_SESSION_COOKIE=11156b9b7f232169b83865704ac28d05-1257751038.591177-220966051</value>
     <value type="QString" >http_proxy=http://192.168.7.3:3128/</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList" >
@@ -112,7 +112,7 @@
   <valuemap type="QVariantMap" >
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList" >
-    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wHDG58G2Nm,guid=48f492072d23007251c5bf2a4aeaffc1</value>
+    <value type="QString" >DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-aZ6iaoKPzL,guid=3c6405057d8ee6caec233dd14af7c201</value>
     <value type="QString" >DESKTOP_SESSION=gnome</value>
     <value type="QString" >DESKTOP_STARTUP_ID=</value>
     <value type="QString" >DISPLAY=:0.0</value>
@@ -120,8 +120,8 @@
     <value type="QString" >GDM_KEYBOARD_LAYOUT=us</value>
     <value type="QString" >GDM_LANG=en_US.UTF-8</value>
     <value type="QString" >GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
-    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-2wfQgO/socket</value>
-    <value type="QString" >GPG_AGENT_INFO=/tmp/seahorse-UydlRd/S.gpg-agent:1869:1</value>
+    <value type="QString" >GNOME_KEYRING_SOCKET=/tmp/keyring-WB91xI/socket</value>
+    <value type="QString" >GPG_AGENT_INFO=/tmp/seahorse-5RrqWz/S.gpg-agent:1802:1</value>
     <value type="QString" >GTK_MODULES=canberra-gtk-module:gail:atk-bridge</value>
     <value type="QString" >GTK_RC_FILES=/etc/gtk/gtkrc:/home/oleg/.gtkrc-1.2-gnome2</value>
     <value type="QString" >HOME=/home/oleg</value>
@@ -132,16 +132,16 @@
     <value type="QString" >PATH=/home/oleg/qtsdk-2009.03/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
     <value type="QString" >PWD=/home/oleg</value>
     <value type="QString" >QTDIR=/home/oleg/qtsdk-2009.03/qt</value>
-    <value type="QString" >SESSION_MANAGER=local/oleg-laptop:@/tmp/.ICE-unix/1801,unix/oleg-laptop:/tmp/.ICE-unix/1801</value>
+    <value type="QString" >SESSION_MANAGER=local/oleg-laptop:@/tmp/.ICE-unix/1734,unix/oleg-laptop:/tmp/.ICE-unix/1734</value>
     <value type="QString" >SHELL=/bin/bash</value>
     <value type="QString" >SPEECHD_PORT=7560</value>
-    <value type="QString" >SSH_AGENT_PID=1842</value>
-    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-2wfQgO/socket.ssh</value>
+    <value type="QString" >SSH_AGENT_PID=1775</value>
+    <value type="QString" >SSH_AUTH_SOCK=/tmp/keyring-WB91xI/socket.ssh</value>
     <value type="QString" >USER=oleg</value>
     <value type="QString" >USERNAME=oleg</value>
-    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-oleg-1xFRdJ/database</value>
+    <value type="QString" >XAUTHORITY=/var/run/gdm/auth-for-oleg-lXD4gF/database</value>
     <value type="QString" >XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
-    <value type="QString" >XDG_SESSION_COOKIE=11156b9b7f232169b83865704ac28d05-1256914880.174871-2021154120</value>
+    <value type="QString" >XDG_SESSION_COOKIE=11156b9b7f232169b83865704ac28d05-1257751038.591177-220966051</value>
     <value type="QString" >http_proxy=http://192.168.7.3:3128/</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList" >
