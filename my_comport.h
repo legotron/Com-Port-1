@@ -11,20 +11,21 @@
 class MyComPort : public QObject {
 	Q_OBJECT
 public:
-	MyComPort(QObject* parent = 0);
-	//virtual ~MyComPort();
+	MyComPort(QObject* parent = 0, QString port_name = 0);
+	bool open();
+	bool close();
+	void transmitMsg(QByteArray &data);
+	void setPortName(QString name);
 
+private:
 	Qthreadcomport *port;
 	QMainComThread *mainComThread;
 
-	void open();
-	void close();
-	void transmitMsg(QByteArray &data);
-private:
-
 private slots:
-
 	void receiveMsg(const QTime timesl, const unsigned char *data, const int size);
+
+signals:
+	void sig_recieveMsg(QByteArray &data);
 };
 
 #endif

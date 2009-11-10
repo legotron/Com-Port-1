@@ -22,10 +22,13 @@ private:
 	MyComPort *comport;
 
 private slots:
-	void on_pushButton_4_clicked();
- void on_pushButton_3_clicked();
- void on_pushButton_2_clicked();
- void on_pushButton_clicked();
+
+ void on_port_comboBox_activated(QString );
+ void on_pushButton_tx_clicked();
+ void on_pushButton_closeport_clicked();
+ void on_pushButton_openport_clicked();
+ void on_recieveMsg(QByteArray &);
+
 };
 
 #endif // MAINWINDOW_H
