@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Tue Nov 10 14:26:37 2009
+** Created: Wed Nov 11 00:49:44 2009
 **      by: Qt User Interface Compiler version 4.5.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -23,6 +23,7 @@
 #include <QtGui/QMenuBar>
 #include <QtGui/QPlainTextEdit>
 #include <QtGui/QPushButton>
+#include <QtGui/QSpacerItem>
 #include <QtGui/QStatusBar>
 #include <QtGui/QToolBar>
 #include <QtGui/QWidget>
@@ -44,6 +45,7 @@ public:
     QPlainTextEdit *rx_window;
     QGridLayout *gridLayout;
     QLabel *label;
+    QSpacerItem *horizontalSpacer;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -69,28 +71,28 @@ public:
         pushButton_closeport = new QPushButton(centralWidget);
         pushButton_closeport->setObjectName(QString::fromUtf8("pushButton_closeport"));
 
-        gridLayout_2->addWidget(pushButton_closeport, 0, 1, 1, 1);
+        gridLayout_2->addWidget(pushButton_closeport, 0, 2, 1, 1);
 
         pushButton_tx = new QPushButton(centralWidget);
         pushButton_tx->setObjectName(QString::fromUtf8("pushButton_tx"));
 
-        gridLayout_2->addWidget(pushButton_tx, 0, 2, 1, 1);
+        gridLayout_2->addWidget(pushButton_tx, 0, 3, 1, 1);
 
         port_comboBox = new QComboBox(centralWidget);
         port_comboBox->setObjectName(QString::fromUtf8("port_comboBox"));
 
-        gridLayout_2->addWidget(port_comboBox, 0, 4, 1, 2);
+        gridLayout_2->addWidget(port_comboBox, 0, 5, 1, 2);
 
         tx_edit = new QLineEdit(centralWidget);
         tx_edit->setObjectName(QString::fromUtf8("tx_edit"));
 
-        gridLayout_2->addWidget(tx_edit, 1, 0, 1, 4);
+        gridLayout_2->addWidget(tx_edit, 1, 0, 1, 5);
 
         tx_cnt_edit = new QLineEdit(centralWidget);
         tx_cnt_edit->setObjectName(QString::fromUtf8("tx_cnt_edit"));
         tx_cnt_edit->setReadOnly(true);
 
-        gridLayout_2->addWidget(tx_cnt_edit, 1, 5, 1, 1);
+        gridLayout_2->addWidget(tx_cnt_edit, 1, 6, 1, 1);
 
         tx_window = new QPlainTextEdit(centralWidget);
         tx_window->setObjectName(QString::fromUtf8("tx_window"));
@@ -99,24 +101,28 @@ public:
         font.setPointSize(8);
         tx_window->setFont(font);
 
-        gridLayout_2->addWidget(tx_window, 2, 0, 1, 3);
+        gridLayout_2->addWidget(tx_window, 2, 0, 1, 4);
 
         rx_window = new QPlainTextEdit(centralWidget);
         rx_window->setObjectName(QString::fromUtf8("rx_window"));
         rx_window->setFont(font);
 
-        gridLayout_2->addWidget(rx_window, 2, 3, 1, 3);
+        gridLayout_2->addWidget(rx_window, 2, 4, 1, 3);
 
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
 
-        gridLayout_2->addLayout(gridLayout, 3, 0, 1, 6);
+        gridLayout_2->addLayout(gridLayout, 3, 0, 1, 7);
 
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
-        gridLayout_2->addWidget(label, 1, 4, 1, 1);
+        gridLayout_2->addWidget(label, 1, 5, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
